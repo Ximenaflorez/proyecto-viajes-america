@@ -1,0 +1,509 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body{
+    background: #eeee;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* grids de la pagina index*/
+
+.contenedor{
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+.contenedor> div{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    background: rgb(39, 220, 202) ;
+    box-shadow: 2px 2px 10px rgba(188, 170, 194, 0.8);
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr  ;
+    grid-template-rows: 1fr 300px 400px 400px;
+    grid-gap: 10px;
+}
+
+header{
+    background: rgba(113, 229, 216, 1);
+padding-top: 15px;
+    height: 70px; 
+}
+
+.contenedor .item {
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width:100%;
+    max-width: 1000px;
+    background: rgb(18, 133, 114);
+    grid-row: 1 / 2; 
+   grid-column: 1/ 4;
+}
+
+.contenedor .item-2 {
+    background: rgb(25, 242, 206);
+    grid-row: 2 / 3; 
+   grid-column: 1 / 2;
+   border-radius: 10px;  
+   border-radius: 10px; 
+}
+
+.contenedor .item-3 {
+    background: rgb(25, 242, 206);
+   
+    grid-row: 2 / 3; 
+   grid-column: 2 / 3;
+   border-radius: 10px;  
+}
+
+.contenedor .item-4 {
+    background: rgb(25, 242, 206);
+    grid-row: 2 / 3; 
+   grid-column: 3 / 4;
+   border-radius: 10px;  
+}
+
+.contenedor .item-5{
+    background: rgb(238, 190, 94);
+    grid-row: 3 / 4; 
+   grid-column: 1 / 4;
+   border-radius: 10px; 
+   margin-left: 120px;
+   margin-right:120px;
+    
+}
+.contenedor .item-6{
+    background: rgb(225, 126, 50);
+    grid-row: 4 / 5; 
+   grid-column: 1 / 4;
+   border-radius: 10px; 
+   margin-left: 120px;
+   margin-right:120px; 
+}
+footer{
+    background: rgb(64, 205, 205);
+   height: 150px;
+   margin-top: 20px;
+    
+}
+
+/* componentes del header     */
+
+.logo{
+    width: 15%;
+    height:40px;
+    float: left;
+}
+.logo .loguito-1{ 
+    height: 100%;
+    width: 60%;
+    object-fit: contain;
+  
+   }
+
+.loguito-1{
+    animation-name: mover; 
+    animation-duration: .20s; 
+}
+   @keyframes mover
+   {
+    0%{
+   transform: scale(1);
+}
+30%{
+    transform: scale(2);
+ }
+ 60%{
+    transform: scale(1.5);
+ }
+ 100%{
+    transform: scale(1);
+ }
+}
+   .lupa{
+    width: 15%;
+    height:40px;
+    float: right;
+}
+   
+.lupa img{
+   height: 90%;
+   width: 90%;
+   object-fit: contain;
+   padding-top: 5px;
+  } 
+
+nav{
+    text-align: right;
+    padding-top:9px;
+    box-sizing: border-box;
+}
+
+.navBar li {
+    display: inline;
+}
+
+.navBar li a{
+    color: black;
+    font-size: 15px;
+    font-family: 'Comfortaa', Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 10px;  
+}
+
+.navBar li a:hover{
+    color:blueviolet;}
+
+/* aqui termina los componentes del header */
+/* aqui comienza el div item - la foto inicial de la pagina  */
+
+.item{
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.item img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.texto-encima{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 30px;
+    
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+
+}
+/* aqui termina el div item - la foto inicial de la pagina  */
+/* aqui inician los  div item-2 item-3 item-4 - las 3 cajitas  */
+
+.aventura-globos{
+    width: 90%;
+}
+
+.aventura-glob{
+    position: relative;
+    padding-top: 20px;
+    top: 30%;   
+}
+
+.destinos{
+    height: 60%;
+    width: 90%;
+}
+.destin-1{
+    position: relative;
+    padding-top: 20px;
+    top: 30%;   
+}
+.gastronomia{
+    height: 60%;
+    width: 90%;
+}
+.gastro{
+    position: relative;
+    padding-top: 20px;
+    top: 30%; 
+}
+/* aqui termina los  div item-2 item-3 item-4 - las 3 cajitas  */
+/* aqui inicia el articulo viajar sola   */
+.viajebox {
+    display: flex;
+    flex-direction: row;
+}
+
+.viaje-sola{
+    font-size: 30px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 30%;
+    height: 100%;
+}
+
+.viaje-art{
+    font-size: 20px;
+    width: 40%;
+    height: 100%;
+    padding: 7%;
+    text-align: left;
+}
+.viaje-alone{
+    border-radius: 20px;
+    margin: 10px;
+    padding: 1%;
+    width: 25%;
+    height: 100%;}
+    
+/* aqui termina el articulo viajar sola   */
+/* Aqui incia el articulo viajar en pareja*/
+
+.viajebox-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.viaje-junto{
+    font-size: 30px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 30%;
+    height: 100%;
+}
+
+.viaje-artdos{
+    font-size: 20px;
+    width: 40%;
+    height: 100%;
+    padding: 7%;
+    text-align: left;
+    
+}
+.viaje-pareja{
+    border-radius: 20px;
+    margin: 10px;
+    padding: 1%;
+    width: 25%;
+    height: 100%;}
+
+/* Aqui termina el articulo viajar en pareja*/  
+/* Aqui comienza el footer*/ 
+
+
+   .footer{
+    display: flex;
+    flex-direction: row;
+   }
+
+   .redes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:100%;
+   }   
+
+   .redes img{
+    height: 90px;
+    object-fit: contain;
+    padding: 40px 10px 10px 10px;
+   }
+    
+   .piede-pagina{
+    width: 30%;
+    height: 80%;
+    padding: 50px 10px 10px 10px;
+    font-size: 15px;
+    text-align: center ;
+}
+    
+   .pie-frase{
+    width: 50%;
+    height: 80%;
+    padding: 50px 20px 20px 20px;
+    font-size: 15px;
+    text-align: left;
+   }
+/* Aqui termina el footer*/  
+/* Aqui termina la pagina de index/  
+
+
+ Aqui comienza la pagina de viajes 
+/* grids de la pagina viajes*/
+.contenedor-viaje{
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.contenedor-viaje> div{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    background: rgb(39, 220, 202) ;
+    box-shadow: 2px 2px 10px rgba(188, 170, 194, 0.8);
+}
+
+.contenedor-viaje{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr  ;
+    grid-template-rows: 300px 200px 200px ;
+    grid-gap: 10px;
+}
+
+.contenedor-viaje .item-2viaje {
+    background: rgb(25, 242, 206);
+    grid-row: 1 / 2; 
+   grid-column: 1 / 2;
+   border-radius: 10px;  
+   border-radius: 10px; 
+}
+
+.contenedor-viaje .item-3viaje {
+    background: rgb(25, 242, 206);
+   
+    grid-row: 1 / 2; 
+   grid-column: 2 / 3;
+   border-radius: 10px;  
+}
+
+.contenedor-viaje .item-4viaje {
+    background: rgb(25, 242, 206);
+    grid-row: 1 / 2; 
+   grid-column: 3 / 4;
+   border-radius: 10px;  
+}
+
+.contenedor-viaje .item-5viaje{
+    background: rgb(238, 190, 94);
+    grid-row: 2 / 3; 
+   grid-column: 1 / 4;
+   border-radius: 10px; 
+   margin-left: 120px;
+   margin-right:120px;
+    
+}
+.contenedor-viaje .item-6viaje{
+    background: rgb(225, 126, 50);
+    grid-row: 3 / 4; 
+   grid-column: 1 / 4;
+   border-radius: 10px; 
+   margin-left: 120px;
+   margin-right:120px; 
+}
+/* Aqui terminan los grids de la pagina viajes*/
+
+/*Aqui estan contenidos los item-2 item-3 item-4 de la pagina de viajes*/
+
+.item-2viaje{
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+}
+.item-2viaje h1{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.item-2viaje img{
+   height: 100%;
+   width: 100%;
+   border-radius: 10px;
+}
+
+.item-3viaje{
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+}
+.item-3viaje h1{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.item-3viaje img{
+   height: 100%;
+   width: 100%;
+   border-radius: 10px;
+}
+
+.item-4viaje{
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+}
+
+.item-4viaje h1{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.item-4viaje img{
+   height: 100%;
+   width: 100%;
+   border-radius: 10px;
+}
+/*Aqui estan terminan  los item-2 item-3 item-4 de la pagina de viajes*/
+/*aqui empieza el item-5 mi ruta andina*/
+
+.miruta-andina {
+    display: flex;
+    flex-direction: row;
+}
+
+.ruta-titulo{
+    font-size: 30px;
+    padding-top: 20px;
+    width: 30%;
+    height: 100%;
+}
+
+.ruta-parrafo{
+    font-size: 20px;
+    width: 40%;
+    height: 100%;
+    padding-top: 20px;
+    text-align: left;
+}
+.miruta-andina img{
+    border-radius: 10px;
+    margin: 5px;
+    height:160px;
+}
+/*aqui termina el item-5 mi ruta andina*/
+/*aqui comienza el item-6  conociendo el amazonas*/
+.conociendo-ama {
+    display: flex;
+    flex-direction: row;
+}
+
+.ama-titulo{
+    font-size: 30px;
+    padding-top: 20px;
+    width: 30%;
+    height: 100%;
+}
+
+.ama-parrafo{
+    font-size: 20px;
+    width: 40%;
+    height: 100%;
+    padding-top: 20px;
+    text-align: left;
+}
+.conociendo-ama img{
+    border-radius: 10px;
+    margin: 5px;
+    height:160px;
+}
+/*aqui termina el item-6  conociendo el amazonas*/
+
+
+/*comienza el html de gastronomia*/
+/* grids del html de gastronomia */
