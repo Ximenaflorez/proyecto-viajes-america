@@ -3,10 +3,8 @@ padding: 0;
 box-sizing: border-box;}
 
 body{
-    background: #eeee;
     color: #000;
     font-family: 'Roboto', sans-serif;
-
 }
 /* grids de la pagina index*/
 
@@ -19,12 +17,11 @@ body{
     text-align: center;
 }
 
-
 .contenedor> div{
     display: block;
     padding: 15px;
     color: #fff;
-    background: rgb(39, 220, 202) ;
+    background: #27dcca ;
     box-shadow: 2px 2px 10px rgba(188, 170, 194, 0.8);
 }
 
@@ -57,12 +54,10 @@ padding-top: 15px;
     grid-row: 2 / 3; 
    grid-column: 1 / 2;
    border-radius: 10px;  
-   border-radius: 10px; 
 }
 
 .contenedor .item-3 {
     background: rgb(25, 242, 206);
-   
     grid-row: 2 / 3; 
    grid-column: 2 / 3;
    border-radius: 10px;  
@@ -110,7 +105,6 @@ footer{
     height: 100%;
     width: 60%;
     object-fit: contain;
-  
    }
 
 .loguito-1{
@@ -507,3 +501,378 @@ nav{
 
 /*comienza el html de gastronomia*/
 /* grids del html de gastronomia */
+.contenedor-gastro{
+    margin: 20px 70px 20px 70px;
+    display: grid;
+    grid-template-columns:1fr   ;
+    grid-template-rows: 50px 300px 300px 300px;
+    grid-gap: 10px;
+}
+
+.contenedor-gastro h1{
+ text-align: center;
+}
+
+
+/* comienza el flex de gastronomia mexico */
+.gastro-mexico{
+  width: 90%;
+  max-width: 900px;
+  height: 90%;
+  background: rgb(238, 190, 94);
+  margin: 40px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.gastro-mexico h2{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 50px; 
+}
+
+.gastro-mexico p{
+    font-size: 20px;
+  font-weight: lighter;
+  padding-top: 50px; 
+}
+
+.gastro-mexico img{
+    object-fit: contain;
+    height: 80%;
+    width: 40%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+/* comienza el flex de gastronomia colombia */
+
+.gastro-colombia{
+    width: 90%;
+    max-width: 900px;
+    height: 90%;
+    background: rgb(238, 190, 94);
+    margin: 40px;
+    border-radius: 10px;
+    display: flex;
+  }
+  
+  .gastro-colombia h2{
+    padding: 20px;
+      font-size: 40px;
+      font-weight: bold;
+      padding-top: 50px; 
+  }
+  
+  .gastro-colombia p{
+      font-size: 15px;
+    font-weight: lighter;
+    padding-top: 50px; 
+  }
+  
+  .gastro-colombia img{
+      object-fit: contain;
+      height: 80%;
+      width: 40%;
+      padding: 20px;
+      border-radius: 30px;
+  }
+  
+  /* comienza el flex de gastronomia peru*/
+  .gastro-peru{
+    width: 90%;
+    max-width: 900px;
+    height: 90%;
+    background: rgb(238, 190, 94);
+    margin: 40px;
+    border-radius: 10px;
+    display: flex;
+  }
+  
+  .gastro-peru h2{
+    padding: 20px;
+      font-size: 40px;
+      font-weight: bold;
+      padding-top: 50px; 
+  }
+  .gastro-peru p{
+      font-size: 15px;
+    font-weight: lighter;
+    padding-top: 50px; 
+  }
+  .gastro-peru img{
+      object-fit: contain;
+      height: 80%;
+      width: 40%;
+      padding: 20px;
+      border-radius: 30px;
+  }
+  
+
+  /* Aqui comienza el html de alojamientos*/
+    /* grids de alojamientos*/
+
+
+    .contenedor-aloja{
+        margin: 20px 70px 20px 70px;
+        display: grid;
+        grid-template-columns:1fr   ;
+        grid-template-rows: 50px 1fr 400px  ;
+        grid-gap: 20px;
+    }
+     /*alojamientos de mexico*/
+    
+    .contenedor-aloja h1{
+     text-align: center;
+    }
+    
+    .mexico-aloja {
+        background: rgb(25, 242, 206);
+        grid-row: 2 / 3; 
+       grid-column: 1 / 2;
+       border-radius: 10px;
+       
+    }
+
+    .alojamex-1{
+        display: flex;
+    }
+
+    .alojamex-1 h3{
+        font-size: 40px;
+        width: 20%;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .alojamex-1 p{
+        width: 30%;
+        text-align: justify;
+        padding-top: 80px;
+    }
+
+    .alojamex-1 iframe{
+        width: 50%;
+        border-radius: 20px;
+        padding: 20px 40px 20px 40px ;
+    }
+
+    .alojamex-2{
+        display: flex;
+    }
+
+    .alojamex-2 h3{
+        font-size: 40px;
+        width: 20%;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .alojamex-2 p{
+        width: 30%;
+        text-align: justify;
+        padding-top: 80px;
+    }
+
+    .alojamex-2 iframe{
+        width: 50%;
+        border-radius: 20px;
+        padding: 20px 40px 20px 40px ;
+    }
+  /*alojamientos de colombia*/
+    .colom-aloja {
+        background: rgb(25, 242, 206);
+        grid-row: 3 / 4; 
+       grid-column: 1 / 2;
+       border-radius: 10px;  
+     
+    }
+
+    .colombia-alojam{
+        display: flex;
+    }
+
+    .colombia-alojam h3{
+        font-size: 40px;
+        width: 20%;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .colombia-alojam p{
+        width: 30%;
+        text-align: justify;
+        padding-top: 80px;
+    }
+
+    .colombia-alojam iframe{
+        width: 50%;
+        border-radius: 20px;
+        padding: 20px 40px 20px 40px ;
+    }
+
+    /*aqui comienza el html de actividades */
+    /*grid de actividades*/
+
+    .lugares-container{
+        display: grid;
+        max-width: 1200px;
+        grid-template-columns: 1fr 400px 400px 1fr;
+        grid-template-rows: 50px 400px 400px 400px ;
+        grid-gap: 10px;
+    }
+
+    .activ-real {
+        grid-row: 1 / 4; 
+       grid-column: 1 / 2;
+       border-radius: 10px;  
+    }
+
+
+    .activ-lugares {
+        background: rgb(25, 242, 206);
+        grid-row: 2 / 3; 
+       grid-column: 2 / 3;
+       border-radius: 10px;  
+    }
+    
+    .activ-rutas {
+        background: rgb(25, 242, 206);
+        grid-row: 2 / 3 ;
+       grid-column: 3 / 4;
+       border-radius: 10px;  
+    }
+
+    .activ-sabor {
+        background: rgb(25, 242, 206);
+        grid-row: 3 / 4; 
+       grid-column: 2 / 3;
+       border-radius: 10px;  
+    }
+
+    .activ-costum {
+        background: rgb(25, 242, 206);
+        grid-row: 3 / 4; 
+       grid-column: 3 / 4;
+       border-radius: 10px;  
+    }
+
+    .activ-levan {
+        background: rgb(25, 242, 206);
+        grid-row: 4 / 5; 
+       grid-column: 2 / 3;
+       border-radius: 10px;  
+    }
+
+    .activ-transpor {
+        background: rgb(25, 242, 206);
+        grid-row: 4 / 5; 
+       grid-column: 3 / 4;
+       border-radius: 10px;  
+    }
+
+/*aqui termina los grids de actividades*/
+
+/*aqui comienza el div class activ-lugares actividades*/
+
+    .activ-lugares h2{
+     
+        font-size: 20px;
+       text-align: center;
+       padding-top: 10px;
+        color: rgb(255, 253, 253);
+    }
+
+    .activ-lugares img{
+     display: flex;
+     margin: 30px 30px 30px 40px;
+        height: 80%;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    /*aqui comienza el div class activ-rutas actividades*/
+
+    .activ-rutas h2{
+     
+        font-size: 20px;
+       text-align: center;
+       padding-top: 10px;
+        color: rgb(255, 253, 253);
+    }
+
+    .activ-rutas img{
+     display: flex;
+     margin: 30px 30px 30px 40px;
+        height: 80%;
+        width: 80%;
+        border-radius: 10px;
+    }
+/*aqui comienza el div class activ-sabor actividades*/
+.activ-sabor h2{
+     
+    font-size: 20px;
+   text-align: center;
+   padding-top: 10px;
+    color: rgb(255, 253, 253);
+}
+
+.activ-sabor img{
+ display: flex;
+ margin: 30px 30px 30px 40px;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/*aqui comienza el div class activ-costum actividades*/
+
+.activ-costum h2{
+     
+    font-size: 20px;
+   text-align: center;
+   padding-top: 10px;
+    color: rgb(255, 253, 253);
+}
+
+.activ-costum img{
+ display: flex;
+ margin: 30px 30px 30px 40px;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/*aqui comienza el div class activ-levan actividades*/
+.activ-levan h2{
+     
+    font-size: 20px;
+   text-align: center;
+   padding-top: 10px;
+    color: rgb(255, 253, 253);
+}
+
+.activ-levan img{
+ display: flex;
+ margin: 30px 30px 30px 40px;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+}
+/*aqui comienza el div class activ-transpor actividades*/
+.activ-transpor h2{
+     
+    font-size: 20px;
+   text-align: center;
+   padding-top: 10px;
+    color: rgb(255, 253, 253);
+}
+
+.activ-transpor img{
+ display: flex;
+ margin: 30px 30px 30px 40px;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+}
