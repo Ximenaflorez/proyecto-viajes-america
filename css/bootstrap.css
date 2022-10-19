@@ -1,5 +1,14 @@
 .carousel-item img{
-    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
  
 }
 
+main .col {
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+.col .card {
+    background-color: rgb(173, 245, 231);
+}
